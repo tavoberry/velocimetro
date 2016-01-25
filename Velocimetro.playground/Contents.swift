@@ -39,7 +39,7 @@ enum Velocidades : Int{
             case 3:
                 return (2,"Velocidad Media")
             default:
-                return (0,"Apagado")
+                return (1,"Velocidad Baja")
                 
             }
         }
@@ -48,7 +48,7 @@ enum Velocidades : Int{
     
     var auto = Auto()
     
-    for i in 0..20{
-        print ()
+    for i in 0...20{
+        print (auto.cambioDeVelocidad(i))
     }
 
